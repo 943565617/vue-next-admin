@@ -35,6 +35,7 @@
 		"print-js": "^1.6.0",
 		"qrcodejs2-fixes": "^0.0.2",
 		"qs": "^6.12.0",
+		"sass-migrator": "^2.3.1",
 		"screenfull": "^6.0.2",
 		"sortablejs": "^1.15.2",
 		"splitpanes": "^3.1.5",

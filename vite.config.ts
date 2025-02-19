@@ -50,7 +50,8 @@ export default defineConfig(({ mode, command }: ConfigEnv) => {
 				css: { charset: false },
 			},
 		},
-		base: command === 'serve' ? './' : env.VITE_PUBLIC_PATH,
+		// base: command === 'serve' ? './' : env.VITE_PUBLIC_PATH,
+		base: './',
 		// 预加载项目必需的组件
 		optimizeDeps: {
 			// // 是否将 Vue、React、@vueuse/core 和 @vueuse/head 作为外部依赖提取出来

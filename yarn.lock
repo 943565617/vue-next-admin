@@ -3888,6 +3888,11 @@ safe-regex@^1.1.0:
   dependencies:
     ret "~0.1.10"
 
+sass-migrator@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.npmmirror.com/sass-migrator/-/sass-migrator-2.3.1.tgz#c71e0988d153175450d23156a8c39612b9a7b013"
+  integrity sha512-JXXLZfzrnxtUWz/TS4xnbJq4g709wqYFgUb2s32FTDsEQSgPThRWrwT49vxfQK+eUbavJUzoQZ/tR5lq7fFnyA==
+
 sass@^1.81.0:
   version "1.81.0"
   resolved "https://registry.npmmirror.com/sass/-/sass-1.81.0.tgz#a9010c0599867909dfdbad057e4a6fbdd5eec941"
