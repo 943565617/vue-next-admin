@@ -82,7 +82,7 @@ onUnmounted(() => {
 				background-position: -100% 0;
 			}
 		}
-		position: relative;
+		// position: relative;
 		&::after {
 			content: '';
 			width: 250px;

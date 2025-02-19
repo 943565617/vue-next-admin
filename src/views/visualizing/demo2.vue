@@ -818,6 +818,7 @@ onUnmounted(() => {
 			background-size: 200% 100%;
 			animation: masked-animation 4s infinite linear;
 			-webkit-box-reflect: below -2px -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(255, 255, 255, 0.1)));
+			position: relative;
 			@keyframes masked-animation {
 				0% {
 					background-position: 0 0;
@@ -826,7 +827,6 @@ onUnmounted(() => {
 					background-position: -100% 0;
 				}
 			}
-			position: relative;
 			&::after {
 				content: '';
 				width: 50%;
