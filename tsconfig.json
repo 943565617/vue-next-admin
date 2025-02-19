@@ -1,0 +1,36 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "esnext",
+		"moduleResolution": "node",
+		"lib": ["esnext", "dom"],
+		"jsx": "preserve" /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */,
+		"isolatedModules": true /* Transpile each file as a separate module (similar to 'ts.transpileModule'). */,
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["src/*"]
+		},
+
+		// 严格性和类型检查相关配置
+		"strict": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+
+		// 模块和兼容性相关配置
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"experimentalDecorators": true /* Enables experimental support for ES7 decorators. */,
+		"resolveJsonModule": true,
+
+		// 调试和兼容性相关配置
+		"sourceMap": true,
+		"useDefineForClassFields": true,
+		"allowJs": true,
+
+		// 类型声明相关配置
+		"types": ["node", "vite/client", "element-plus/global"]
+	},
+
+	"include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "vite.config.mts"],
+	"exclude": ["node_modules", "dist"]
+}

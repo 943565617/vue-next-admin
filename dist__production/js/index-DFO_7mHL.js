@@ -1,0 +1,1 @@
+import{d as e,b as a,c as l,V as s,ai as u,o}from"./@vue-5amejw8K.js";const t={class:"layout-pd"},n=e({__name:"index",setup(e){const n=a("");return(e,a)=>{const d=u("el-input");return o(),l("div",t,[s(d,{modelValue:n.value,"onUpdate:modelValue":a[0]||(a[0]=e=>n.value=e),placeholder:"menu122：请输入内容测试路由缓存"},null,8,["modelValue"])])}}});export{n as default};

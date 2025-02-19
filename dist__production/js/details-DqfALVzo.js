@@ -1,0 +1,1 @@
+import{d as a,c as s,a as i,o as d}from"./@vue-5amejw8K.js";const l={class:"layout-padding"},t=a({__name:"details",setup:a=>(a,t)=>(d(),s("div",l,t[0]||(t[0]=[i("div",{class:"layout-padding-auto layout-padding-view"},[i("div",{class:"w100 h100 flex"},[i("div",{class:"flex-margin color-primary"},"filtering-details 测试界面")])],-1)])))});export{t as default};
