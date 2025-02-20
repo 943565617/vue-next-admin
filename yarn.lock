@@ -534,6 +534,18 @@
   resolved "https://registry.npmmirror.com/@pkgjs/parseargs/-/parseargs-0.11.0.tgz#a77ea742fab25775145434eb1d2328cf5013ac33"
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
 
+"@plugin-web-update-notification/core@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.npmmirror.com/@plugin-web-update-notification/core/-/core-2.0.0.tgz#760b7116578c8dfa408abe8fa98bb71862669a24"
+  integrity sha512-xxtEtTkFHX59iKm6NxCeyA2vZNA8nM+RjmuPC+jc2JAuhR9oGlmWHrlzXM64bu6NxZuQ5W52+sZKUsQUnDLh/g==
+
+"@plugin-web-update-notification/vite@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.npmmirror.com/@plugin-web-update-notification/vite/-/vite-2.0.0.tgz#ea72cc627283cbb0a51a945d4c5efbcb55a243b6"
+  integrity sha512-pytuDfqUmFhJkysiH05BHYs56/7+0ikSQETADqT8S3Zu4j9N+ENEVB0Z2myTRw5FuI3zVLmt/pLXH9EAWYZ2CQ==
+  dependencies:
+    "@plugin-web-update-notification/core" "2.0.0"
+
 "@popperjs/core@npm:@sxzz/popperjs-es@^2.11.7":
   version "2.11.7"
   resolved "https://registry.npmmirror.com/@sxzz/popperjs-es/-/popperjs-es-2.11.7.tgz#a7f69e3665d3da9b115f9e71671dae1b97e13671"
@@ -1594,6 +1606,11 @@ deep-is@^0.1.3:
   version "0.1.4"
   resolved "https://registry.npmmirror.com/deep-is/-/deep-is-0.1.4.tgz#a6f2dce612fadd2ef1f519b73551f17e85199831"
   integrity sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==
+
+default-passive-events@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmmirror.com/default-passive-events/-/default-passive-events-2.0.0.tgz#79b1aa67becbaab38b718469b5480fef92eda649"
+  integrity sha512-eMtt76GpDVngZQ3ocgvRcNCklUMwID1PaNbCNxfpDXuiOXttSh0HzBbda1HU9SIUsDc02vb7g9+3I5tlqe/qMQ==
 
 define-data-property@^1.0.1, define-data-property@^1.1.4:
   version "1.1.4"

@@ -108,11 +108,14 @@ const computeAnimationTime = () => {
 };
 // 改变 animation 动画调用
 const changeAnimation = () => {
-	if (state.order === 1) {
-		noticeBarTextRef.value.style.cssText = `animation: oneAnimation ${state.oneTime}s linear; opactity: 1;}`;
-		state.order = 2;
-	} else {
-		noticeBarTextRef.value.style.cssText = `animation: twoAnimation ${state.twoTime}s linear infinite; opacity: 1;`;
+	// console.log('noticeBarTextRef.value',state.order,noticeBarTextRef.value);
+	if(noticeBarTextRef.value){
+		if (state.order === 1) {
+			noticeBarTextRef.value.style.cssText = `animation: oneAnimation ${state.oneTime}s linear; opactity: 1;}`;
+			state.order = 2;
+		} else {
+			noticeBarTextRef.value.style.cssText = `animation: twoAnimation ${state.twoTime}s linear infinite; opacity: 1;`;
+		}
 	}
 };
 // 监听 animation 动画的结束

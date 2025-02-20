@@ -5,6 +5,7 @@ import { defineConfig, loadEnv, ConfigEnv } from 'vite';
 import viteCompression from 'vite-plugin-compression';// 压缩插件
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons';
 import { buildConfig } from './src/utils/build';
+import { webUpdateNotice } from '@plugin-web-update-notification/vite'
 
 const pathResolve = (dir: string) => {
 	return resolve(__dirname, '.', dir);
@@ -20,6 +21,18 @@ export default defineConfig(({ mode, command }: ConfigEnv) => {
 	return {
 		plugins: [
 			vue(),
+			webUpdateNotice({
+				versionType: 'build_timestamp', // 版本号类型
+				logVersion: true, // 是否打印版本号
+				checkInterval: 1 * 60 * 1000, // 设置检查间隔，单位毫秒，默认10分钟后检查
+				hiddenDefaultNotification: true, // 隐藏默认通知栏
+				// notificationProps: {
+				//   title: '标题',
+				//   description: '系统更新，请刷新页面',
+				//   buttonText: '刷新',
+				//   // dismissButtonText: '忽略'
+				// }, // 通知栏配置
+			  }),
 			// vueSetupExtend(),
 			// 压缩插件
 			// viteCompression({

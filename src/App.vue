@@ -17,6 +17,7 @@ import { useTagsViewRoutes } from '@/stores/tagsViewRoutes';
 import { useThemeConfig } from '@/stores/themeConfig';
 import other from '@/utils/other';
 import { Local, Session } from '@/utils/storage';
+import { ElMessageBox } from 'element-plus'
 import mittBus from '@/utils/mitt';
 import setIntroduction from '@/utils/setIconfont';
 // 导入 Element Plus 中英文语言包
@@ -28,6 +29,30 @@ const Setings = defineAsyncComponent(() => import('@/layout/navBars/topBar/setin
 const CloseFull = defineAsyncComponent(() => import('@/layout/navBars/topBar/closeFull.vue'));
 const Upgrade = defineAsyncComponent(() => import('@/layout/upgrade/index.vue'));
 const Sponsors = defineAsyncComponent(() => import('@/layout/sponsors/index.vue')); //赞助商提示
+const isShowUpdate = ref(false) // 是否提示过弹窗
+// 在其他文件中监听自定义更新版本事件
+document.body.addEventListener('plugin_web_update_notice', (e: any) => {
+  const { version, options } = e.detail
+  console.log('版本号:', e.detail)
+  // write some code, show your custom notification and etc.
+  // 使用 ElMessageBox.confirm 弹出一个确认对话框
+  if (!isShowUpdate.value) {
+    isShowUpdate.value = true
+    ElMessageBox.confirm('页面有更新，请点击确定刷新页面！', '提示', {
+      closeOnClickModal: false, // 是否可以通过点击遮罩关闭对话框
+      showClose: false, // 是否显示右上角关闭按钮
+      showCancelButton: false, // 显示取消按钮
+      confirmButtonText: '确定', // 确认按钮的文本
+      cancelButtonText: '取消', // 取消按钮的文本
+      type: 'warning', // 对话框类型为警告
+    })
+      .then(() => {
+        // 如果用户点击了确认按钮，则刷新页面
+        location.reload()
+      })
+      .catch(() => {})
+  }
+})
 // 定义变量内容
 const setingsRef = ref();
 const route = useRoute();

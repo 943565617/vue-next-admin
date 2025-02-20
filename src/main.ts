@@ -2,8 +2,8 @@
  * @Author: luoyi 943565617@qq.com
  * @Date: 2024-04-02 16:09:34
  * @LastEditors: luoyi 943565617@qq.com
- * @LastEditTime: 2024-11-25 17:37:58
- * @FilePath: \vue-next-admin-master\src\main.ts
+ * @LastEditTime: 2025-02-19 10:52:54
+ * @FilePath: \lingtao-pcf:\xiangmu\vue-next-admin\src\main.ts
  * @Description: 
  * 
  * Copyright (c) 2024 by ${git_name_email}, All Rights Reserved. 
@@ -24,6 +24,7 @@ import SvgIcons from "@/assets/SvgIcon.vue";
 // 一定要在main.ts中导入tailwind.css，防止vite每次hmr都会请求src/style/index.scss整体css文件导致热更新慢的问题
 import "./styles/tailwind.css";
 import "tailwindcss/tailwind.css";
+import "default-passive-events";
 const app = createApp(App);
 
 directive(app);
